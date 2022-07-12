@@ -2,7 +2,7 @@
 import Image from 'next/image'
  import {Header} from "../components/Header";
 import {Meta} from "../components/Meta";
-
+import  ReactDOM  from 'react-dom';
 
 export default function Home() {
  
@@ -18,9 +18,15 @@ return(
 
          {/* Main Content Start   */}
         <div className="main_content">
-            <div className="container">
+            <div className="sidebar">
+              <div className="sidebar_header">
+
+              </div>
+            </div>
+            <div className='other-content'>
                 
             </div>
+
         </div>
             {/* Main Content End  */}
           
