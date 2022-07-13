@@ -1,8 +1,10 @@
 
-import Image from 'next/image'
+import Image from 'next/image';
  import {Header} from "../components/Header";
 import {Meta} from "../components/Meta";
-import  ReactDOM  from 'react-dom';
+ import {Sidebar} from "../components/Sidebar";
+ import {Slot_1} from "../components/Slot_1";
+ import {Slot_2} from "../components/Slot_2";
 
 export default function Home() {
  
@@ -18,13 +20,10 @@ return(
 
          {/* Main Content Start   */}
         <div className="main_content">
-            <div className="sidebar">
-              <div className="sidebar_header">
-
-              </div>
-            </div>
+             <Sidebar />
             <div className='other-content'>
-                
+            <Slot_1 />
+            <Slot_2 />
             </div>
 
         </div>
