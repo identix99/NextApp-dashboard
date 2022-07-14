@@ -5,6 +5,10 @@ import {Meta} from "../components/Meta";
  import {Sidebar} from "../components/Sidebar";
  import {Slot_1} from "../components/Slot_1";
  import {Slot_2} from "../components/Slot_2";
+ import {Slot_3} from "../components/Slot_3";
+ import {Slot_4} from "../components/Slot_4";
+ import {Slot_5} from "../components/Slot_5";
+ import {Maps} from "../components/Maps";
 
 export default function Home() {
  
@@ -24,6 +28,10 @@ return(
             <div className='other-content'>
             <Slot_1 />
             <Slot_2 />
+            <Slot_3 />
+            <Slot_4 />
+            <Slot_5 />
+            {/* <Maps /> */}
             </div>
 
         </div>
