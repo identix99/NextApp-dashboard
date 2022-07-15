@@ -1,12 +1,25 @@
 import hometool from "../public/images/Shape.svg";
 import Image from "next/image";
 import add from "../public/images/icons8-add.svg";
+ 
 const Slot_1 = () => {
+
+
+  
+ const menunove = ()=>{
+  const  menu = document.querySelector(".sidebar");
+  const  othercontent = document.querySelector(".other-content");
+  menu.classList.toggle("sidebar_move");
+  othercontent.classList.toggle("othercontent_width");
+    
+ }
+
+
   return (
     <>
       <div className="slot-1">
         <div className="left_tools">
-          <button className="home_tool">
+          <button className="home_tool" onClick={menunove}>
             <div className="image-container">
               <Image
                 src={hometool}

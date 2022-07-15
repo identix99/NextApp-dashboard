@@ -41,7 +41,7 @@ const addclass =()=>{
                 </div>
               </div>
               <span className="filter_value">Filter</span>
-              <div className="down_arrow">
+              <div className="down_arrow" style={{transform:currclass ? "rotate(180deg)  translateY(50%)" : "rotate(0deg) translateY(-50%)"  }}>
                 <div className="image-container">
                   <Image
                     src={downaroww}
