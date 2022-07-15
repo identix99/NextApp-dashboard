@@ -247,16 +247,23 @@
  	width: 200px;
  	background-color: #001B4A;
  	transition: all 0.5s ease;
-	margin-left: unset;
+ 	margin-left: unset;
  	display: flex;
  	flex-direction: column;
+ 	position: absolute;
+ 	z-index: 100;
+ 	height: 100%;
+ 	left: -200px;
  }
-.sidebar_move{
-	margin-left: -200px;
-}
-.othercontent_width{
-	width: 100%!important;
-}
+
+ .sidebar_move {
+ 	left: 0;
+ }
+
+ .jusify_slot1 {
+ 	justify-content: flex-end !important;
+ }
+
  .sidebar_header {
  	background-color: #002C79;
  	display: flex;
@@ -265,6 +272,7 @@
  	flex-direction: column;
  	padding: 18px 0;
  	text-align: center;
+
  }
 
  .avtar {
@@ -426,11 +434,11 @@
  /* ======== sidebaar css end ======================== */
  /* =====  other- content start =============================== */
  .other-content {
- 	width: calc(100% - 200px);
+ 	width: 100%;
  	background-color: #E8EEF0;
  	height: 100%;
  	padding: 25px 52px 0 52px;
-	transition: all 0.5s ease;
+ 	transition: all 0.5s ease;
  }
 
 
@@ -458,6 +466,7 @@
  .left_tools {
  	display: flex;
  	align-items: center;
+ 	margin-right: 20px;
  }
 
  .couse_btn {
@@ -480,6 +489,7 @@
  	display: flex;
  	align-items: center;
  	justify-content: space-between;
+	transition: all 0.5s ease;
  }
 
  .text-course-btn {
@@ -494,6 +504,7 @@
  .home_tool-text:hover {
  	color: #003BA1;
  }
+
 
  /* ======= slot-1  end ============================== */
 
@@ -764,7 +775,7 @@
  .slot-4 {
  	margin-top: 10px;
  	margin-bottom: 14px;
-	min-height: 725px;
+ 	min-height: 725px;
  }
 
  .slot-4 table {
@@ -940,7 +951,7 @@
  /* ===========slot-5-end =========== */
  /* fotter_dummy */
  .dashboard_footer_dummy {
- 	width: calc(100% - 200px);
+ 	width:  100%;
  	height: 20px;
  	background-color: #757575;
  	position: absolute;
@@ -957,10 +968,10 @@
 
  .page-link-x {
  	width: 40px;
-	 display: flex;
+ 	display: flex;
  	align-items: center;
-	justify-content: center;
- 	 height: 40px;
+ 	justify-content: center;
+ 	height: 40px;
  	border-radius: 8px;
  	background: #fff;
  	border: 1px solid rgba(32, 166, 210, 0.5);
@@ -969,18 +980,21 @@
  	line-height: 14px;
  	text-align: center;
  	color: #20a6d2;
-	cursor: pointer;
+ 	cursor: pointer;
  }
- .pagination-tab .page-item-x{
-	margin-right: 8px;
+
+ .pagination-tab .page-item-x {
+ 	margin-right: 8px;
  }
- .pagination-tab .page-item-x:last-child{
-	margin-right: unset!important;
+
+ .pagination-tab .page-item-x:last-child {
+ 	margin-right: unset !important;
  }
-.pagination-tab .active .page-link-x {
-	background: rgba(32, 166, 210, 0.2);
-}
- 
+
+ .pagination-tab .active .page-link-x {
+ 	background: rgba(32, 166, 210, 0.2);
+ }
+
 
 
 

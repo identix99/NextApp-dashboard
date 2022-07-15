@@ -9,6 +9,13 @@ import { Slot_4 } from "../components/Slot_4";
 import { Maps } from "../components/Maps";
 
 export default function Home() {
+const removemenu =()=>{
+  const  menu = document.querySelector(".sidebar");
+  menu.classList.remove("sidebar_move");
+  const  slot1 = document.querySelector(".slot-1");
+  slot1.classList.remove("jusify_slot1");
+}
+
   return (
     <>
       <Meta title="GEMS Modern Academy Dubai - Index-Page" />
@@ -22,7 +29,7 @@ export default function Home() {
         {/* Main Content Start   */}
         <div className="main_content">
           <Sidebar />
-          <div className="other-content" >
+          <div className="other-content" onMouseEnter={removemenu} >
             <Slot_1  />
             <Slot_2 />
             <Slot_3 />

@@ -8,9 +8,9 @@ const Slot_1 = () => {
   
  const menunove = ()=>{
   const  menu = document.querySelector(".sidebar");
-  const  othercontent = document.querySelector(".other-content");
+  const  slot1 = document.querySelector(".slot-1");
   menu.classList.toggle("sidebar_move");
-  othercontent.classList.toggle("othercontent_width");
+  slot1.classList.toggle("jusify_slot1");
     
  }
 
