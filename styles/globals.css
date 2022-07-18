@@ -251,7 +251,7 @@
  	display: flex;
  	flex-direction: column;
  	position: absolute;
- 	z-index: 100;
+ 	z-index: 2000;
  	height: 100%;
  	left: -200px;
  }
@@ -664,7 +664,7 @@
  	background: #fff;
  	position: absolute;
  	left: 0;
- 	top: 0;
+ 	top: 10px;
  	overflow-y: scroll;
  	height: 0;
  	transition: all 0.5s ease;
@@ -1449,6 +1449,18 @@
  	.other-content {
  		padding: 15px 15px 0 15px;
  	}
+	 .page-link-x {
+		width: 35px;
+		height: 35px;
+		font-size: 12px;
+		line-height: 12px;
+	}
+	.tab_show_count {
+		height: 35px;
+	}
+	.pagination-tab .page-item-x {
+		margin-right: 6px;
+	}
  }
 
  @media (max-width: 450px) {
