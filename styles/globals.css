@@ -489,7 +489,7 @@
  	display: flex;
  	align-items: center;
  	justify-content: space-between;
-	transition: all 0.5s ease;
+ 	transition: all 0.5s ease;
  }
 
  .text-course-btn {
@@ -781,7 +781,6 @@
  .slot-4 table {
  	width: 100%;
  	border-radius: 8px;
- 	overflow: hidden;
  }
 
  .slot-4 table thead {
@@ -951,7 +950,7 @@
  /* ===========slot-5-end =========== */
  /* fotter_dummy */
  .dashboard_footer_dummy {
- 	width:  100%;
+ 	width: 100%;
  	height: 20px;
  	background-color: #757575;
  	position: absolute;
@@ -963,6 +962,7 @@
  .pagination-tab {
  	display: flex;
  	align-items: center;
+ 	flex-wrap: wrap;
 
  }
 
@@ -1042,7 +1042,15 @@
 
  @media (max-width: 1800px) {}
 
- @media (max-width: 1600px) {}
+ @media (max-width: 1600px) {
+ 	.filter_menu {
+ 		width: 220px;
+ 	}
+
+ 	.show_count_parent {
+ 		width: 150px;
+ 	}
+ }
 
  @media (max-width: 1440px) {
  	.part-1 {
@@ -1082,6 +1090,32 @@
  	.arrow_nav {
  		width: 5px;
  		height: 10px;
+
+ 	}
+
+ 	.slot-4 table thead th:nth-child(1),
+ 	.slot-4 table tbody tr td:nth-child(1) {
+ 		width: 28%;
+ 		padding-left: 35px;
+ 	}
+
+ 	.slot-4 table thead th:nth-child(2),
+ 	.slot-4 table tbody tr td:nth-child(2) {
+ 		width: 25%;
+ 	}
+
+ 	.slot-4 table thead th:nth-child(3),
+ 	.slot-4 table tbody tr td:nth-child(3) {
+ 		width: 22%;
+ 	}
+
+ 	.slot-5 {
+ 		margin-bottom: 60px;
+ 	}
+
+ 	.other-content {
+
+ 		padding: 25px 40px 0 40px;
 
  	}
  }
@@ -1163,6 +1197,35 @@
  		width: 15px;
  		height: 17px;
  	}
+
+ 	.slot-4 table {
+ 		overflow-x: scroll;
+ 		display: block;
+ 	}
+
+ 	.slot-4 table tr {
+ 		width: 992px !important;
+ 		white-space: nowrap;
+ 		display: flex;
+ 		align-items: center;
+ 	}
+
+ 	.slot-4 table thead th {
+ 		line-height: 50px;
+ 	}
+
+ 	.filter_menu {
+ 		width: 120px;
+ 	}
+
+ 	.searchbar {
+ 		width: 190px;
+ 		margin: 0 15px 0 15px;
+ 	}
+
+ 	.show_count_parent {
+ 		width: 120px;
+ 	}
  }
 
  @media (max-width: 767px) {
@@ -1185,6 +1248,25 @@
  		height: 70px;
  	}
 
+ 	.slot-2 {
+ 		margin: 24px 0 18px 0;
+ 		align-items: flex-start;
+ 		flex-direction: column;
+ 	}
+
+ 	.slot-2-head {
+ 		margin-bottom: 15px;
+ 		font-size: 20px;
+ 		line-height: 1;
+ 	}
+
+ 	.other-content {
+ 		padding: 25px 25px 0 25px;
+ 	}
+
+ 	.slot-4 table tr {
+ 		width: 850px !important;
+ 	}
 
  }
 
@@ -1210,6 +1292,9 @@
  		height: 18px;
  	}
 
+ 	.slot-2-head {
+ 		display: none;
+ 	}
 
 
  	.labal_nav {
@@ -1221,9 +1306,157 @@
  		height: 33px;
  	}
 
+ 	.home_tool-text {
+ 		font-weight: 600;
+ 		font-size: 14px;
+ 		padding-left: 10px;
+ 		margin-left: 10px
+ 	}
+
+ 	.choice_btn {
+
+ 		width: 35px;
+ 		height: 35px;
+
+ 	}
+
+ 	.filter_head {
+
+ 		height: 35px;
+
+ 	}
+
+ 	.filter_icon {
+ 		width: 12px;
+ 		height: 12px;
+ 		margin-right: 8px;
+ 	}
+
+ 	.down_arrow {
+ 		width: 10px;
+ 		height: 5px;
+
+ 	}
+
+ 	.left_tools {
+ 		order: 1;
+ 	}
+
+ 	.jusify_slot1 {
+ 		justify-content: space-between !important;
+ 	}
+
+ 	.slot-2-left_tools {
+
+ 		flex-wrap: wrap;
+ 		justify-content: space-between;
+ 	}
+
+ 	.choice_block {
+ 		order: 1;
+ 	}
+
+ 	.left_tools {
+ 		margin-right: unset;
+ 	}
+
+ 	.filter_menu {
+ 		order: 2;
+ 		margin-left: 3rem;
+ 	}
+
+ 	.searchbar {
+ 		width: 320px;
+ 		margin: 15px 0 0 0;
+ 		order: 3;
+ 	}
+
+ 	#searchbar {
+ 		height: 35px;
+ 		font-size: 12px;
+ 		line-height: 12px;
+ 		padding: 0 12px;
+ 	}
+
+ 	#searchbar::placeholder {
+ 		font-size: 12px;
+ 	}
+
+ 	input#searchbar {
+ 		background-size: 12px;
+ 	}
+
+ 	.activefilter {
+ 		height: 100px;
+ 	}
+
+ 	.activeshowbar {
+ 		height: 100px;
+ 		top: -105px;
+ 	}
+
+ 	.couse_btn {
+ 		width: 120px;
+ 		height: 35px;
+ 		font-size: 12px;
+ 		line-height: 12px;
+
+ 	}
+
+ 	.couse_btn .navicon {
+ 		width: 12px;
+ 		height: 14px;
+ 	}
+
+ 	.home_tool {
+ 		width: 18px;
+ 		height: 18px;
+ 	}
+
+ 	.slot-4 table tbody tr {
+
+ 		height: 40px;
+ 	}
+
+ 	.slot-4 table thead {
+
+ 		height: 45px;
+
+ 	}
+
+ 	.slot-4 table thead th {
+ 		line-height: 45px;
+ 	}
+
+ 	.slot-4 {
+
+ 		min-height: 662px;
+ 	}
+
+ 	.slot-5 {
+ 		flex-direction: column;
+ 		align-items: flex-end;
+ 	}
+
+ 	.show_count_parent {
+ 		margin: 0 0 15px 0;
+ 	}
+
+ 	.slot-5 {
+ 		margin-bottom: 40px;
+ 	}
+
+ 	.other-content {
+ 		padding: 15px 15px 0 15px;
+ 	}
  }
 
- @media (max-width: 450px) {}
+ @media (max-width: 450px) {
+	.searchbar {
+		width: 200px;
+	 
+	}
+ }
 
  @media (max-width: 400px) {
  	.header_logo {
@@ -1243,6 +1476,26 @@
  		height: 30px;
  	}
 
+ 	.home_tool-text {
+
+ 		font-size: 12px;
+ 		padding-left: 8px;
+ 		margin-left: 8px;
+ 	}
+
+ 	.course_found p {
+ 		font-size: 12px;
+ 	}
+	 .slot-4 table thead th:nth-child(1), .slot-4 table tbody tr td:nth-child(1) {
+ 
+		padding-left: 25px;
+	}
+	.slot-2 {
+		margin: 18px 0 18px 0;	
+	}
+	.slot-4 table tr {
+		width: 700px !important;
+	}
  }
 
  @media (max-width: 367px) {
